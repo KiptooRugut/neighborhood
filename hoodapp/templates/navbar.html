@@ -1,0 +1,44 @@
+{% load crispy_forms_tags %}{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{%static 'styles.css'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="nav nav-pills">
+                <li class="active" style="margin: 4px;"><a href="{%url 'index'%}" class="btn btn-small bg-info" role="button" style="color:white;font-weight:bold;">Home</a></li>
+                <li style="margin: 4px;">
+                    <a href="{%url 'neighborhood'%}" class="btn btn-small bg-info" role="button" style="color:white;font-weight:bold;">Neighborhood</a></li>
+
+                <li style="margin: 4px;">
+                    <a href="{%url 'create_business'%}" class="btn btn-small bg-info" role="button" style="color:white;font-weight:bold;">Businesses</a></li>
+
+            </ul>
+            <form class="navbar-form navbar" role="search" action="{% url 'search_results'%}">
+                <input type="text" class="form-control" placeholder="Search Business " name="search" style="height: 30px; width: 200px;margin: 4px;">
+                <button class="btn btn-success btn-sm" type="submit">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a href="/admin" class="btn btn-primary btn-sm" style="padding: 3px;">Admin Dashboard</a></li>
+                <br>
+                <li class="dropdown">
+                    <a class="dropdown-toggle btn btn-primary btn-sm" data-toggle="dropdown" href="#" style="margin: 4px;">Account<span class="caret"></span></a>
+                    <ul class="dropdown-menu ">
+                        <li><a href="{%url 'profile'%} "><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                        <li><a href="/logout ">Logout</a></li>
+                    </ul>
+                </li>
+                <br><br>
+                <li><a href="/accounts/login/ " class="btn btn-default bg-light" style="padding: 3px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
