@@ -5,10 +5,12 @@ certifi==2021.10.8
 charset-normalizer==2.0.12
 cloudinary==1.29.0
 confusable-homoglyphs==3.2.0
+dj-database-url==0.5.0
 Django==4.0.4
 django-bootstrap4==22.1
 django-cloudinary-storage==0.3.0
 django-crispy-forms==1.14.0
+django-heroku==0.3.1
 django-registration==3.2
 django-tinymce==3.4.0
 idna==3.3
@@ -20,3 +22,4 @@ six==1.16.0
 soupsieve==2.3.2.post1
 sqlparse==0.4.2
 urllib3==1.26.9
+whitenoise==6.0.0
