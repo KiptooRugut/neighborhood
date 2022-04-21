@@ -1,0 +1,16 @@
+{%extends 'django_registration/base.html'%} {%load bootstrap4%} {%load static%} {%block content%}
+<div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-sm-4 col-md-4 col-lg-4 success">
+                <h3>Account created successfully!</h3>
+                <h5>Let's now look into the features<em><b><a href="{% url 'index'%}">in this Application</a></b></em>Enjoy.
+                </h5>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+    {%endblock%}
