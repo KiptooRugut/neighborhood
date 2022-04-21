@@ -12,8 +12,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from decouple import config
-import cloudinary
 import os
+import cloudinary_storage
+import cloudinary
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -43,8 +44,9 @@ INSTALLED_APPS = [
     'hoodapp',
     'bootstrap4',
     'crispy_forms',
-    'cloudinary',
     'cloudinary_storage',
+    'cloudinary',
+    
     
 ]
 
@@ -81,6 +83,8 @@ WSGI_APPLICATION = 'neighborhood.wsgi.application'
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
@@ -94,12 +98,21 @@ DATABASES = {
     }
 }
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dkowjad86',
+    'API_KEY': '371575937469716',
+    'API_SECRET': 'yKzn_zeDHnqje8d2iJkg8xusZb8'
+}
+
 cloudinary.config( 
   cloud_name = "dkowjad86", 
   api_key = "371575937469716", 
   api_secret = "yKzn_zeDHnqje8d2iJkg8xusZb8",
   secure = True
 )
+
+
+
 # Email configurations remember to install python-decouple
 EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 EMAIL_HOST = config('EMAIL_HOST')
