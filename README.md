@@ -3,20 +3,17 @@
 #### Author: [Kiptoo Rugut](https://github.com/kiptooRugut)
 
 ## Screenshot
-### Landing page/Chats
-![chathome](https://user673ebdeff0.png)
+### Homepage
+![Homepage](https://github.com/KiptooRugut/neighborhood/blob/master/hoodapp/static/images/Homepage.png)
 
 ### Profile
-![profile](https://user-341-883cf9b058b1.png)
-
-### Businesses
-![business](https://user-d69759626bea.png)
+![business](https://github.com/KiptooRugut/neighborhood/blob/master/hoodapp/static/images/Profile.png)
 
 ### Neighborhood
-![neigh](https://user-6d847a29025d.png)
+![neigh](https://github.com/KiptooRugut/neighborhood/blob/master/hoodapp/static/images/Neighborhoods.png)
 
-### Search results
-![search](https://user-4cf33f1ef2cc.png)
+### Create Neighborhoods
+![search](https://github.com/KiptooRugut/neighborhood/blob/master/hoodapp/static/images/Create-neighborhood.png)
 
 
 ## Description
